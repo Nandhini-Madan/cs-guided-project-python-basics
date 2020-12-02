@@ -10,4 +10,8 @@ Examples:
 """
 def addition(a, b):
     # Your code here
+    s=a+b
+    return s
+
+print(addition(3,2))
 

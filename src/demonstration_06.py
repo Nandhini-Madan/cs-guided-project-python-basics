@@ -17,4 +17,23 @@ Examples:
 """
 def XO(txt):
     # Your code here
+    txt_lower=txt.lower()
+    #return txt_lower.count('x')==txt_lower.count('o')
+    x_count=0
+    o_count=0
+    #for loop for each character
+    for char in txt_lower:
+        #check if char is x or o
+        if char=='x':
+            x_count+=1
+            print(x_count)
+        elif char=='o':
+            o_count+=1
+            print(o_count)
 
+    return x_count==o_count
+
+
+print(XO("ooxx"))
+print(XO("xooxx"))
+print(XO("ooxXm"))
